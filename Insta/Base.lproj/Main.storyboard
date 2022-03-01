@@ -120,7 +120,6 @@
         <!--Feed View Controller-->
         <scene sceneID="UOs-Wu-mGw">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pxo-iH-dvv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="5K5-Pm-e7q" customClass="FeedViewController" customModule="Insta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i2g-bM-nL6">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
@@ -131,58 +130,43 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="538" id="wib-9s-I46" customClass="PostCell" customModule="Insta" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="538"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="414" id="wib-9s-I46" customClass="PostCell" customModule="Insta" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="414"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wib-9s-I46" id="2TD-3w-sLO">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juliana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2w1-SN-vrp">
-                                                    <rect key="frame" x="8" y="414" width="65.333333333333329" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="dqd-CP-leG"/>
-                                                        <constraint firstAttribute="width" constant="65.333333333333329" id="fKT-gj-hPT"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="8" y="385" width="65.333333333333329" height="23"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="Wow, I love Instagram" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B6-0E-Yn5">
-                                                    <rect key="frame" x="83.333333333333258" y="414" width="110.66666666666669" height="20"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jv-kG-wnB">
+                                                    <rect key="frame" x="8" y="8" width="398" height="369"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="299" id="gnv-wg-RhL"/>
+                                                        <constraint firstAttribute="width" secondItem="0jv-kG-wnB" secondAttribute="height" multiplier="398:369" id="YUg-GU-vBt"/>
                                                     </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Wow, I love Instagram" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2B6-0E-Yn5">
+                                                    <rect key="frame" x="81.333333333333343" y="385" width="324.66666666666663" height="20.333333333333314"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0jv-kG-wnB">
-                                                    <rect key="frame" x="8" y="8" width="338" height="348"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" secondItem="0jv-kG-wnB" secondAttribute="height" multiplier="184:199" id="KSA-JM-TMy"/>
-                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="VbY-e1-3sL"/>
-                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="350" id="f0t-g0-xa9"/>
-                                                        <constraint firstAttribute="height" constant="300" id="fz2-bO-HdW"/>
-                                                        <constraint firstAttribute="width" secondItem="0jv-kG-wnB" secondAttribute="height" multiplier="366:395" id="stG-Pb-NUi"/>
-                                                        <constraint firstAttribute="width" constant="300" id="z4e-CS-wp4"/>
-                                                    </constraints>
-                                                </imageView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottomMargin" secondItem="2w1-SN-vrp" secondAttribute="bottom" constant="92" id="0Ib-5x-r02"/>
-                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="top" secondItem="0jv-kG-wnB" secondAttribute="bottom" constant="8" id="1tl-Fj-Ikh"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="2B6-0E-Yn5" secondAttribute="trailing" constant="200" id="5xG-3c-CXY"/>
-                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="firstBaseline" secondItem="2B6-0E-Yn5" secondAttribute="baseline" id="6cr-qr-rRG"/>
-                                                <constraint firstItem="0jv-kG-wnB" firstAttribute="top" secondItem="2TD-3w-sLO" secondAttribute="topMargin" constant="-3" id="9yJ-ec-NAA"/>
-                                                <constraint firstAttribute="trailing" secondItem="0jv-kG-wnB" secondAttribute="trailing" constant="10" id="UBQ-Rg-koA"/>
-                                                <constraint firstItem="0jv-kG-wnB" firstAttribute="leading" secondItem="2TD-3w-sLO" secondAttribute="leading" constant="8" id="iLl-6J-ph3"/>
-                                                <constraint firstItem="2B6-0E-Yn5" firstAttribute="top" secondItem="0jv-kG-wnB" secondAttribute="bottom" constant="10" id="iR8-DN-xnQ"/>
-                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="leading" secondItem="2TD-3w-sLO" secondAttribute="leading" constant="8" id="kUP-GN-nnE"/>
-                                                <constraint firstAttribute="trailing" secondItem="0jv-kG-wnB" secondAttribute="trailing" constant="8" id="lRg-v4-IGZ"/>
-                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="top" secondItem="0jv-kG-wnB" secondAttribute="bottom" constant="8" symbolic="YES" id="qtf-G4-ad1"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="2B6-0E-Yn5" secondAttribute="bottom" constant="8" id="scb-9Y-gXZ"/>
-                                                <constraint firstItem="2B6-0E-Yn5" firstAttribute="leading" secondItem="2w1-SN-vrp" secondAttribute="trailing" constant="10" id="snk-m2-WPY"/>
+                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="leading" secondItem="2TD-3w-sLO" secondAttribute="leading" constant="8" id="77E-8M-KD2"/>
+                                                <constraint firstAttribute="trailing" secondItem="0jv-kG-wnB" secondAttribute="trailing" constant="8" id="8Nt-4k-wzl"/>
+                                                <constraint firstItem="2B6-0E-Yn5" firstAttribute="top" secondItem="0jv-kG-wnB" secondAttribute="bottom" constant="8" id="AEc-Ms-EpV"/>
+                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="top" secondItem="0jv-kG-wnB" secondAttribute="bottom" constant="8" id="QEm-tr-Jek"/>
+                                                <constraint firstItem="2w1-SN-vrp" firstAttribute="top" secondItem="0jv-kG-wnB" secondAttribute="bottom" constant="8" id="ShA-eU-yCS"/>
+                                                <constraint firstAttribute="trailing" secondItem="2B6-0E-Yn5" secondAttribute="trailing" constant="8" id="cqB-7E-69Q"/>
+                                                <constraint firstItem="0jv-kG-wnB" firstAttribute="leading" secondItem="2TD-3w-sLO" secondAttribute="leading" constant="8" id="do7-V2-jKV"/>
+                                                <constraint firstItem="0jv-kG-wnB" firstAttribute="top" secondItem="2TD-3w-sLO" secondAttribute="top" constant="8" id="f5B-GT-H9c"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2B6-0E-Yn5" secondAttribute="bottom" constant="8" id="hvj-xi-dgf"/>
+                                                <constraint firstItem="2B6-0E-Yn5" firstAttribute="leading" secondItem="2w1-SN-vrp" secondAttribute="trailing" constant="8" id="kXp-Jf-pIi"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -208,6 +192,7 @@
                         <outlet property="tableView" destination="Ozm-k4-UXz" id="Cit-f9-3Yf"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pxo-iH-dvv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1518.4615384615383" y="63.270142180094787"/>
         </scene>
