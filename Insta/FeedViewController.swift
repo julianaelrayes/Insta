@@ -35,7 +35,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     @objc func loadPosts(){
-        numberOfPosts = 2
+        numberOfPosts = 20
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
         query.limit = numberOfPosts
@@ -50,7 +50,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func loadMorePosts(){
-        numberOfPosts = numberOfPosts + 2
+        numberOfPosts = numberOfPosts + 20
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
         query.limit = numberOfPosts
