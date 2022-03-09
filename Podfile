@@ -6,7 +6,7 @@ target 'Insta' do
   use_frameworks!
 
   pod 'AlamofireImage'
-  
   pod 'Parse'
+  pod 'MessageInputBar'
 
 end
